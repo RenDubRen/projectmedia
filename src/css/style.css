@@ -74,6 +74,7 @@ img {
 
 .navbar__button {
   margin-left: 30px;
+  cursor: pointer;
 }
 
 .navbar__phone {
