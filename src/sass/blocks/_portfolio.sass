@@ -1,0 +1,33 @@
+.portfolio
+    background: $bg-color url('../img/portfolio/portfolio-bg.jpg') repeat-y center left
+    background-size: 50%
+    &__title
+        max-width: 800px
+        font-size: 30px
+        line-height: 45px
+        margin: 35px auto 100px
+    &__arrows
+        max-width: 120px
+        margin: 60px auto 0
+        display: flex
+        justify-content: space-between
+.slider
+    &__image
+        margin: auto
+@media (max-width: 768px)
+    .portfolio
+        background: $bg-color
+        &__title
+            max-width: 275px
+            line-height: 1.2
+            font-size: 18px
+            margin: 0 auto 40px
+@media (max-width: 400px)
+    .portfolio
+        &__arrows
+            margin: 40px auto 0
+    .slider
+        &__image
+            max-width: 250px
+
+        

@@ -67,6 +67,7 @@ img {
   font-size: 24px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -79,6 +80,10 @@ img {
   padding: 23px;
   font-size: 15px;
   border-radius: 10px;
+}
+
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
 }
 
 /* Импорт стилей шапки */
@@ -302,6 +307,7 @@ img {
   max-width: 360px;
   line-height: 35px;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .offer__subtitle {
@@ -423,5 +429,54 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+/* Стили для блока Portfolio*/
+.portfolio {
+  background: #f5f5f5 url("../img/portfolio/portfolio-bg.jpg") repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  max-width: 800px;
+  font-size: 30px;
+  line-height: 45px;
+  margin: 35px auto 100px;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  margin: 60px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider__image {
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    background: #f5f5f5;
+  }
+  .portfolio__title {
+    max-width: 275px;
+    line-height: 1.2;
+    font-size: 18px;
+    margin: 0 auto 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .portfolio__arrows {
+    margin: 40px auto 0;
+  }
+  .slider__image {
+    max-width: 250px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
