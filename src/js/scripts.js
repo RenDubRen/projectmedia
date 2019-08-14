@@ -41,3 +41,5 @@ $('#offer-form').on('submit', function(event) {
         }
     });
 });
+
+
