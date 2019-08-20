@@ -954,4 +954,123 @@ img {
     margin: 0 auto;
   }
 }
+
+/* Стили для блока footer*/
+.footer {
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  left: 0;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 70px;
+  padding-left: 210px;
+}
+
+.contacts__title {
+  font-size: 22px;
+  line-height: 1.5;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  margin-bottom: 90px;
+  max-width: 310px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts-list {
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-list__icon {
+  line-height: 20px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin-right: 23px;
+}
+
+.contacts-list__text {
+  max-width: 147px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.contacts-list__text a {
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.contacts-list__text-bold {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .map {
+    position: static;
+    width: 100%;
+  }
+  .contacts {
+    paddint-top: 50px;
+    padding-left: 0;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  .contacts__title {
+    max-width: 240px;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 40px;
+    line-height: 1.2;
+  }
+  .contacts-block {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .contacts-list__icon {
+    margin-right: 15px;
+  }
+  .contacts-list__text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

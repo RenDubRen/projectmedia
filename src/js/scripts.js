@@ -91,7 +91,7 @@ $('#offer-form').on('submit', function(event) {
         type: 'POST',
         data: $(this).serialize(),
         success: function(data) {
-            $('.success').html(data + ', Ваша форма отправлена!')
+            $('.success').html(data + ', Ваша форма отправлена!');
         },
         error: function(jqXHR, textStatus) {
             console.log(jqXHR + ': ' + textStatus);
